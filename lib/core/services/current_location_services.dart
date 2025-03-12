@@ -4,8 +4,8 @@ Future<Position> getCurrentLocation() async {
   // Check if location services are enabled
   bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
   if (!serviceEnabled) {
-    // Location services are not enabled, show an error or return a default position
-    throw Exception('Location services are disabled.');
+    // throw Exception('Location services are disabled.');
+    await Geolocator.requestPermission();
   }
 
   // Check and request location permissions

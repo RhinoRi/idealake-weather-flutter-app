@@ -149,7 +149,7 @@ class _HomeScreenState extends State<HomeScreen> {
       autofocus: true,
       controller: _searchController,
       decoration: InputDecoration(
-        hintText: 'Search...',
+        hintText: 'Search City...',
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(
